@@ -1,0 +1,7 @@
+<h1><%= @organization.name %></h1>
+
+<p>Slug: <%= @organization.slug %></p>
+
+<%= link_to "Edit", edit_organization_path(@organization) %> |
+<%= link_to "Delete", @organization, method: :delete, data: { confirm: "Are you sure?" } %> |
+<%= link_to "Back", organizations_path %>
